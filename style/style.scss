@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import "reset.css";
+@import "blocks/variables";
+@import "blocks/forms";
+@import "blocks/menu-burger";
+@import "blocks/header";
+@import "blocks/container";
+@import "blocks/numbers";
+@import "blocks/preferences";
+@import "blocks/calculate";
+@import "blocks/crypto";
+@import "blocks/features";
+@import "blocks/features";
+@import "blocks/subscription";
+@import "blocks/footer";
+
+body {
+  background-color: rgba(13, 13, 43, 1);
+  font-family: 'Rubik', sans-serif;
+  color: #FFFFFF;
+  font-weight: 400;
+}
+.lock {
+  overflow: hidden;
+}
+img {
+  display: block;
+}
+.wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}

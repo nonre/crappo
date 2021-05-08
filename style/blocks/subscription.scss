@@ -1,0 +1,53 @@
+.subscription {
+  background: url("../../img/backgrounds/subscription-bg-1.png") 20% 100% no-repeat,
+  linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  padding: 88px 0;
+}
+.subscription__container {
+  background: url("../../img/backgrounds/subscription-bg-2.png") 2% 0 no-repeat,
+  url("../../img/backgrounds/subscription-bg-3.png") 99% 100% no-repeat,
+  $accent;
+  border-radius: 16px;
+  padding: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.subscription__content {
+  margin-right: 40px;
+}
+.subscription__btn {
+  height: 52px;
+  background: #FFFFFF;
+  color: $primary;
+  &:hover {
+    background: #FFFFFF;
+  }
+}
+.subscription__title {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  margin-bottom: 16px;
+}
+.subscription__text {
+  max-width: 350px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+@media (max-width: 1023px) {
+  .subscription__container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .subscription__content {
+    margin-bottom: 20px;
+  }
+  .subscription__title {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,134 @@
+@mixin button {
+  background-color: $accent;
+  color: #FFFFFF;
+  height: 59px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 32px;
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  transition: background-color 300ms ease-in-out;
+  &_nav {
+    height: 52px;
+  }
+  &:hover {
+    transition: background-color 300ms ease-in-out;
+    background-color: #3167d2;
+  }
+}
+@mixin _chevron {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: url("../../img/chevron-right.svg");
+      top: 50%;
+      right: 28px;
+      transform: translate(0, -50%);
+      width: 7px;
+      z-index: 1;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 16px;
+      transform: translate(0, -50%);
+      width: 32px;
+      height: 32px;
+      background-color: #FFFFFF;
+      border-radius: 50%;
+    }
+}
+.btn {
+  @include button;
+}
+.calculate__form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+  input[type="text"] {
+     width: 100%;
+     max-width: 402px;
+    margin-right: 48px;
+     box-sizing: border-box;
+     font: inherit;
+     font-weight: normal;
+     font-size: 20px;
+     line-height: 150%;
+     color: $primary;
+     border: none;
+     border-bottom: 1px solid #E0E0E0;
+     &::placeholder {
+       font-size: 20px;
+       line-height: 150%;
+       color: $primary;
+     }
+   }
+  select {
+    width: 100%;
+    max-width: 200px;
+    margin-right: 48px;
+    box-sizing: border-box;
+    font-weight: normal;
+    font-size: 20px;
+    color: $primary;
+    padding: 3.5px;
+    border: none;
+    border-bottom: 1px solid #E0E0E0;
+  }
+}
+.subscription__form {
+  flex: 1 1;
+  display: flex;
+  justify-content: flex-end;
+  input[type="email"] {
+    width: 100%;
+    max-width: 374px;
+    box-sizing: border-box;
+    padding: 7px 2px;
+    margin-right: 36px;
+    font: inherit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.01em;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    background: transparent;
+    color: #FFFFFF;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 28px;
+      letter-spacing: 0.01em;
+      color: #FFFFFF;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .calculate__form {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    input[type="text"],
+    select {
+    margin-bottom: 30px;
+    min-width: 100% }
+    button {
+      align-self: center;
+    }
+  }
+  .subscription__form {
+    flex-direction: column;
+    input[type="email"] {
+      max-width: 100%;
+      margin: 0 0 20px 0;
+    }
+    button {
+      margin: 0 auto;
+    }
+  }
+}

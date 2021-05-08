@@ -1,0 +1,72 @@
+.calculate {
+  padding-top: 100px;
+  text-align: center;
+  background: linear-gradient(to bottom, $primary 70%, #F8F9FB 70%, #FAFBFF 100%);
+}
+.calculate__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  max-width: 65%;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.calculate__post-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #E0E0E0;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+.calculate__container {
+  box-sizing: border-box;
+  max-width: 942px;
+  padding: 48px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
+}
+.calculate__results {
+  text-align: left;
+  padding-top: 48px;
+}
+.calculate__results-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent;
+  margin-bottom: 16px;
+}
+.calculate__results-revenue {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #0D0D2B;
+  margin-bottom: 4px;
+  span {
+    color: $accent;
+  }
+}
+.calculate__results-add {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #828282;
+}
+@media (max-width: 1023px) {
+  .calculate__title {
+    font-size: 30px;
+    max-width: 100%;
+  }
+  .calculate__post-title {
+    max-width: 100%;
+  }
+}
