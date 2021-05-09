@@ -170,12 +170,12 @@
 }
 
 .header__section {
-  background: url("../../img/backgrounds/header-line-2.png") 100% 50% no-repeat fixed;
+  background: url("../img/backgrounds/header-line-2.png") 100% 50% no-repeat fixed;
 }
 
 .header,
 .preferences__numbers {
-  background: url("../../img/backgrounds/header-line-1.png") 50% 70% no-repeat fixed;
+  background: url("../img/backgrounds/header-line-1.png") 50% 70% no-repeat fixed;
 }
 
 @media (max-width: 1023px) {
@@ -471,12 +471,12 @@
 
 .preferences {
   padding-bottom: 100px;
-  background: url("../../img/backgrounds/preferences-bg-1.png") 100% 30% no-repeat, url("../../img/backgrounds/preferences-bg-2.png") 100% 100% no-repeat, url("../../img/backgrounds/preferences-bg-3.png") 0 100% no-repeat;
+  background: url("../img/backgrounds/preferences-bg-1.png") 100% 30% no-repeat, url("../img/backgrounds/preferences-bg-2.png") 100% 100% no-repeat, url("../img/backgrounds/preferences-bg-3.png") 0 100% no-repeat;
 }
 
 @media (max-width: 767px) {
   .preferences {
-    background: url("../../img/backgrounds/preferences-bg-1.png") 100% 30% no-repeat, url("../../img/backgrounds/preferences-bg-2.png") 100% 100% no-repeat, url("../../img/backgrounds/preferences-bg-3.png") 0 65% no-repeat;
+    background: url("../img/backgrounds/preferences-bg-1.png") 100% 30% no-repeat, url("../img/backgrounds/preferences-bg-2.png") 100% 100% no-repeat, url("../img/backgrounds/preferences-bg-3.png") 0 65% no-repeat;
   }
 }
 .calculate {
@@ -628,7 +628,7 @@
 }
 .crypto__card:hover .crypto__card-btn::before {
   position: absolute;
-  content: url("../../img/chevron-right.svg");
+  content: url("../img/chevron-right.svg");
   top: 50%;
   right: 28px;
   transform: translate(0, -50%);
@@ -694,7 +694,7 @@
 }
 .crypto__card-btn:after {
   position: absolute;
-  content: url("../../img/chevron-right.svg");
+  content: url("../img/chevron-right.svg");
   top: 50%;
   transform: translate(-50%, -50%);
   width: 13px;
@@ -721,7 +721,7 @@
 }
 .features {
   padding: 100px 0;
-  background: url("../../img/backgrounds/features-bg-1.png") 12% 0 no-repeat, url("../../img/backgrounds/features-bg-2.png") 100% 100% no-repeat, #2b076e;
+  background: url("../img/backgrounds/features-bg-1.png") 12% 0 no-repeat, url("../img/backgrounds/features-bg-2.png") 100% 100% no-repeat, #2b076e;
 }
 
 .features__title {
@@ -771,7 +771,7 @@
 }
 .features {
   padding: 100px 0;
-  background: url("../../img/backgrounds/features-bg-1.png") 12% 0 no-repeat, url("../../img/backgrounds/features-bg-2.png") 100% 100% no-repeat, #2b076e;
+  background: url("../img/backgrounds/features-bg-1.png") 12% 0 no-repeat, url("../img/backgrounds/features-bg-2.png") 100% 100% no-repeat, #2b076e;
 }
 
 .features__title {
@@ -820,12 +820,12 @@
   }
 }
 .subscription {
-  background: url("../../img/backgrounds/subscription-bg-1.png") 20% 100% no-repeat, linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  background: url("../img/backgrounds/subscription-bg-1.png") 20% 100% no-repeat, linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
   padding: 88px 0;
 }
 
 .subscription__container {
-  background: url("../../img/backgrounds/subscription-bg-2.png") 2% 0 no-repeat, url("../../img/backgrounds/subscription-bg-3.png") 99% 100% no-repeat, #3671e9;
+  background: url("../img/backgrounds/subscription-bg-2.png") 2% 0 no-repeat, url("../img/backgrounds/subscription-bg-3.png") 99% 100% no-repeat, #3671e9;
   border-radius: 16px;
   padding: 48px;
   display: flex;
@@ -1003,6 +1003,10 @@
     width: 64px;
   }
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #0d0d2b;
   font-family: "Rubik", sans-serif;
